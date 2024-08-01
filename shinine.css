@@ -226,3 +226,48 @@ h2 {
 	content: '';
 	display: table;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navig {
+        margin: 10px;
+    }
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .intro {
+        margin: 5px;
+    }
+    .about-content {
+        padding: 15px;
+    }
+    .inventory-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .contact {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    .about-content {
+        padding: 10px;
+    }
+    .inventory-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .contact {
+        padding: 10px;
+    }
+    .contact form {
+        width: calc(100% - 40px);
+    }
+}
