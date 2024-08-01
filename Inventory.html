@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinine Inventory</title>
+    <link rel="stylesheet" href="shinine.css">
+</head>
+<body>
+    <header>
+        <h1><img src="shine.gif" width="120px" alt="Shine">ShiNine Jewelers <img src="shine.gif" width="120px" alt="Shine"></h1>
+    </header>
+    <div class="navig">
+        <nav>
+            <a href="index.html" class="button button1">Home</a>
+            <a href="Aboutus.html" class="button button1">About us</a>
+            <a href="Inventory.html" class="button button1">Inventory</a>
+            <a href="Contactus.html" class="button button1">Contact Us</a>
+        </nav>
+    </div>
+    <h2>Inventory</h2>
+    <center><p>Browse through our elegant and valuable pieces of jewelry that we carry.</p></center>
+    
+    <form onsubmit="searchInventory(event)">
+        <input type="search" name="search" id="Search" placeholder="Search" />
+        <input type="submit" value="Search" />
+    </form>
+    <div class="inventory">
+        <div class="inventory-grid">
+            <div class="inventory-item" data-name="Elegant Necklace">
+                <img src="necklace.jpg" alt="Elegant Necklace">
+                <h3>Elegant Necklace</h3>
+                <p class="description">A beautiful necklace with sparkling diamonds set in a gold chain.</p>
+                <p class="price">Sale $1,200</p>
+            </div>
+            <div class="inventory-item" data-name="Luxury Ring">
+                <img src="ring1.jfif" alt="Luxury Ring">
+                <h3>Luxury Ring</h3>
+                <p class="description">A luxury ring featuring a large sapphire surrounded by diamonds.</p>
+                <p class="price">Sale $2,500</p>
+            </div>
+            <div class="inventory-item" data-name="Silver Bracelet">
+                <img src="brace.jpg" alt="Silver Bracelet">
+                <h3>Silver Bracelet</h3>
+                <p class="description">A sleek gold bracelet with a modern design.</p>
+                <p class="price">Sale $800</p>
+            </div>
+        </div><br>
+    </div>
+    <script src="shinine_js.js"></script>
+</body>
+<footer>
+    <p>&copy; 2024 ShiNine Jewelers. All rights reserved.</p>
+</footer>
+</html>
